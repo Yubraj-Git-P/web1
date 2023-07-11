@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing-Company</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Balsamiq+Sans:wght@700&family=Permanent+Marker&family=Roboto:wght@500&family=Rubik+Moonrocks&family=Slackey&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Baloo bhai 2", "cursive";
+        }
+
+        .logo img {
+            width: 250px;
+        }
+
+        .container {
+            max-width: 1850px;
+            margin: auto;
+            padding: 20px 20px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            transition: all .4s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 35px;
+            border-radius: 10px;
+        }
+
+        #cart {
+            transition: all .4s ease-in-out;
+        }
+
+        #cart:hover {
+            width: 70px;
+            height: 70px;
+        }
+
+        /* second-row */
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .col-2 img {
+            max-width: 100%;
+        }
+
+        .col-2 {
+            flex-basis: 50%;
+            padding: 50px 0px;
+            min-width: 300px;
+        }
+
+        .col-2 h1 {
+            font-size: 65px;
+            line-height: 60px;
+            margin: 30px 0;
+
+        }
+
+        .col-2 p {
+            font-size: 22px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: coral;
+            text-decoration: none;
+            color: white;
+            padding: 14px 75px;
+            margin: 38px 0px;
+            font-size: 30px;
+            border-radius: 30px;
+            border-top-right-radius: 30px;
+            border-top-right-radius: 1px;
+            transition: background-color .5s;
+        }
+
+        .btn:hover {
+            background-color: brown;
+        }
+
+        header {
+            background-color: #ffd6d6;
+        }
+
+        
+        /* featured-categories-section */
+
+        .categories{
+            margin: 80px 0;
+        }
+
+        .col-3{
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .col-3 img{
+            width: 100%;
+        }
+
+        .small-container{
+            max-width: 1470px;
+            margin: auto;
+            padding: 0 30px;                        
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="Ecom/logo.png">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb">Home</a></li>
+                        <li><a
+                                href="https://www.amazon.com/Coupons/b/?ie=UTF8&node=2231352011&ref_=sv_subnav_goldbox_1">Products</a>
+                        </li>
+                        <li><a
+                                href="https://www.amazon.com/b/?ie=UTF8&node=16976406011&ref_=sv_subnav_goldbox_2">About</a>
+                        </li>
+                        <li><a href="https://www.amazon.com/registries?ref_=nav_cs_registry">Contacts</a></li>
+                        <li><a
+                                href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell ">Accounts</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <img src="Ecom/cart.png" id="cart" width="45px" height="45px">
+
+            </div>
+
+            <!-- Second row -->
+
+            <div class="row">
+
+                <div class="col-2">
+                    <h1>Give Your Workout <br> A new Style!</h1>
+                    <p>Sucess isn't always about greatness. It's about consistency.
+                        Consistent <br> hard work gains Sucess. Greatness will come</p>
+
+                    <a href="#" class="btn">Explore now &#8594;</a>
+
+                </div>
+
+                <div class="col-2">
+                    <img src="Ecom/image1.png">
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- featured-category-Section -->
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="Ecom/category-1.jpg">
+                </div>
+
+                <div class="col-3">
+                    <img src="Ecom/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="Ecom/category-3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured-Product-section -->
+
+    
+
+
+</body>
+
+</html>

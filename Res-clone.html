@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful-Xplore</title>
+    <!-- <link rel="stylesheet" href="https://fontawesome.com/releases/v5.15/css/all.css"/> -->
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .all {
+            background-image: url("images/background.png");
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-color: antiquewhite; */
+        }
+
+        nav {
+            width: 90%;
+            margin: auto;
+            padding: 45px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 70px;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 50px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        nav ul li a:hover{
+            color:#ff008f;
+            background-color: aliceblue;
+            border-radius: 5px;
+        }
+
+        .aero-img {
+            width: 30px;
+        }
+        nav p {
+            position: absolute;
+            top: 72px;
+            right: 120px;
+        }
+
+        .licon {
+            width: 127px;
+            padding: 6px 28px;
+            background-color: #fd0cc1e6;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .info {
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+
+        h1 {
+            font-size: 66px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .info p {
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .info .btn{
+            background-color: #ff008f;
+            color:#fff;
+            padding: 8px 28px;
+            border-radius: 10px;
+            font-size: 14px;
+            position: absolute;
+            left: 590px;
+        }
+
+
+        .info form{
+            height: 40px;
+            width: 600px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 20px;
+        }
+
+        .info form input{
+            border: 0;
+            outline: 0;
+            width: 100%;
+            height: 100%;
+            padding-left: 22px;
+            font-size: 15px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="all">
+
+        <nav>
+            <img src="images/logo2.png" class="logo">
+
+            <ul>
+                <li><a href="#">TravelGuide</a></li>
+                <li><a href="#">FamousPlaces</a></li>
+                <li><a href="#">ContactUs</a></li>
+
+                <li class="licon"> <img src="images/icon.png" class="aero-img">
+                    <p>Bookings</p>
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <div class="info">
+
+            <h1>Beautiful <br> places to <span class="auto-input"></span>  <br></h1>
+
+            <p>Ensuring that the world Heritage sites sustain their outstanding uiversal <br>
+                value is an increasingly challenging mision</p>
+
+                <form>
+
+                    <input type="text" placeholder="Country name">
+                    <button type="submit" class="btn">Search</button>
+
+                </form>
+        
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <script>
+
+        var typed = new Typed("auto-input",{
+            strings: ["Explore","Bexplore","Mexplore","Pexplore"],
+            typeSpeed: 30,
+            backSpeed: 30,
+            loop: true
+        })
+
+    </script>
+
+</body>
+</html>

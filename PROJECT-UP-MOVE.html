@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .sahil {
+            width: 85%;
+            height: 100vh;
+            margin: 20px 90px;
+            font-family: sans-serif;
+            background-image: url("imgA/back-imageA.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        nav {
+            padding: 0px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #565151;
+            font-size: 16px;
+        }
+
+        .logo {
+            width: 12%;
+        }
+
+        span {
+            position: relative;
+            left: 14%;
+        }
+
+
+        .info {
+            margin-top: 20%;
+            margin-left: 32px;
+        }
+
+
+        .info h1 {
+            font-size: 72px;
+            margin-bottom: 35px;
+        }
+
+        .info p {
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+
+        .btn{
+            text-decoration: none;
+            color: black;
+            font-size: 21px;
+            padding: 15px 83px;
+            text-align: center;
+            background-color:coral;
+            border-radius: 22px;
+            border-top-right-radius: 0px;
+        }
+
+
+        .girl {
+            position: absolute;
+            bottom: 0;
+            right: 3%;
+            width: 37%;
+        }
+
+        .log {
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;
+
+        }
+
+        .Down {
+            text-decoration: none;
+            color: black;
+            padding: 15px 95px;
+            border-radius: 35px;
+            background-color: coral;
+            border-top-right-radius: 0;
+        }
+
+        .anim{
+            opacity: 0.2;
+            transform: translateY(500px);
+            animation: movieup  linear forwards;
+        }
+
+        @keyframes movieup{
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="sahil">
+
+        <nav>
+            <img src="imgA/logoA.png" class="logo anim">
+            <ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+
+            <div>
+                <a href="#" class="log anim">Log in</a>
+                <a href="#" class="Down anim">Download app</a>
+            </div>
+
+        </nav>
+
+        <div class="info">
+
+            <h1 class="anim" >Make <br>New friends.</span> </h1>
+
+            <p class="anim"> Socially is a new social media platform to make new friends online in the <br>
+                world. Now lets explore all its amazing Features. </p>
+                
+                <a href="#" class="btn anim">Join now</a>
+                
+            </div>
+
+
+            <img src="imgA/picA.png" class="girl anim">
+
+    </div>
+
+    <!-- Words Changing effects inside java-script in website -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
+    <script>
+
+        var typed = new Typed(".auto-input", {
+            strings: [
+               "Business", "Commercial", "Responsive", "Maintained"
+            ],
+            typeSpeed: 25,
+            backSpeed: 25,
+            loop: true
+        })
+
+    </script> -->
+
+</body>
+</html>
